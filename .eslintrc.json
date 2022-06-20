@@ -90,6 +90,7 @@
     "no-self-compare": 1,
     "no-sequences": "error",
     "no-undef": "warn",
+    "no-useless-constructor": "off",
     "no-unneeded-ternary": "warn",
     "no-unused-expressions": "warn",
     "no-var": "error",
