@@ -14,7 +14,8 @@
     "eslint:recommended",
     "airbnb-base",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier/prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -30,6 +31,23 @@
     "build"
   ],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "overrides": [
+          {
+            "files": "src/**/*.ts"
+          }
+        ],
+        "arrowParens": "avoid",
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true 
+      }      
+    ],
     "arrow-parens": ["warn", "as-needed", {"requireForBlockBody": false}],
     "arrow-body-style": [
       "warn",
