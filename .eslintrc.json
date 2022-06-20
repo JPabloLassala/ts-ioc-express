@@ -1,7 +1,8 @@
 {
   "env": {
-    "browser": true,
-    "es2021": true
+    "browser": false,
+    "es2021": true,
+    "node": true
   },
   "overrides": [
     {
@@ -13,6 +14,7 @@
   "extends": [
     "eslint:recommended",
     "airbnb-base",
+    "airbnb-typescript",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/prettier"
