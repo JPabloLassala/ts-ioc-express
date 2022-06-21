@@ -14,8 +14,8 @@ container.bind<UserService>(TYPES.UserService).to(UserService);
 
 const server = new InversifyExpressServer(container);
 const app = server.build();
-const port = process.env.PORT;
+const port = 3000;
 
-app.listen(3000);
+app.listen(port);
 
-console.log(`[server]: Server is running at https://localhost:3000`);
+console.log(`[server]: Server is running at https://localhost:${port}`);
